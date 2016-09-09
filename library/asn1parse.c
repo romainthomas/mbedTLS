@@ -106,6 +106,7 @@ int mbedtls_asn1_get_len( unsigned char **p,
     if( *len > (size_t) ( end - *p ) )
         return( MBEDTLS_ERR_ASN1_OUT_OF_DATA );
 
+
     return( 0 );
 }
 
@@ -113,11 +114,15 @@ int mbedtls_asn1_get_tag( unsigned char **p,
                   const unsigned char *end,
                   size_t *len, int tag )
 {
-    if( ( end - *p ) < 1 )
-        return( MBEDTLS_ERR_ASN1_OUT_OF_DATA );
 
-    if( **p != tag )
+    if( ( end - *p ) < 1 ) {
+        return( MBEDTLS_ERR_ASN1_OUT_OF_DATA );
+    }
+
+    if( **p != tag ) {
+
         return( MBEDTLS_ERR_ASN1_UNEXPECTED_TAG );
+    }
 
     (*p)++;
 

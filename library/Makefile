@@ -57,14 +57,14 @@ OBJS_CRYPTO=	aes.o		aesni.o		arc4.o		\
 		md4.o		md5.o		md_wrap.o	\
 		memory_buffer_alloc.o		oid.o		\
 		padlock.o	pem.o		pk.o		\
-		pk_wrap.o	pkcs12.o	pkcs5.o		\
+		pk_wrap.o	pkcs12.o	pkcs5.o  pkcs7.o		\
 		pkparse.o	pkwrite.o	platform.o	\
 		ripemd160.o	rsa.o		sha1.o		\
 		sha256.o	sha512.o	threading.o	\
 		timing.o	version.o			\
 		version_features.o		xtea.o
 
-OBJS_X509=	certs.o		pkcs11.o	x509.o		\
+OBJS_X509=	certs.o		pkcs11.o	x509.o	pkcs7.o	\
 		x509_create.o	x509_crl.o	x509_crt.o	\
 		x509_csr.o	x509write_crt.o	x509write_csr.o
 

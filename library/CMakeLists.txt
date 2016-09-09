@@ -42,6 +42,7 @@ set(src_crypto
     pk_wrap.c
     pkcs12.c
     pkcs5.c
+    pkcs7.c
     pkparse.c
     pkwrite.c
     platform.c
@@ -60,6 +61,7 @@ set(src_crypto
 set(src_x509
     certs.c
     pkcs11.c
+    pkcs7.c
     x509.c
     x509_create.c
     x509_crl.c

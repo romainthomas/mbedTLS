@@ -2121,6 +2121,22 @@
 #define MBEDTLS_PKCS12_C
 
 /**
+ * \def MBEDTLS_PKCS7_C
+ *
+ * Enable PKCS#7 PBE functions.
+ * Adds algorithms for parsing PKCS#8 encrypted private keys
+ *
+ * Module:  library/pkcs12.c
+ * Caller:  library/pkparse.c
+ *
+ * Requires: MBEDTLS_ASN1_PARSE_C, MBEDTLS_CIPHER_C, MBEDTLS_MD_C
+ * Can use:  MBEDTLS_ARC4_C
+ *
+ * This module enables PKCS#12 functions.
+ */
+#define MBEDTLS_PKCS7_C
+
+/**
  * \def MBEDTLS_PLATFORM_C
  *
  * Enable the platform abstraction layer that allows you to re-assign
